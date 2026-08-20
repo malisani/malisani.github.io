@@ -15,36 +15,40 @@
             padding: 20px;
             border: 3px solid #4169E1;
         }
-        h1 {
-            text-transform: uppercase;
-            text-align: center;
-        }
+        
+        /* Povećali smo max-width i maknuli nepotrebne margine tekstova s vrha */
         .logo {
             display: block;
-            margin: 0 auto 20px auto;
-            max-width: 200px;
+            margin: 0 auto 10px auto;
+            max-width: 350px; /* Možeš slobodno mijenjati na 400px ili više ako želiš još veće */
+            height: auto;
         }
         
+        .tagline {
+            text-align: center;
+            color: #87CEFA;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+
         /* Stil za okvir projekta */
         .project-box {
             background: #1a3c8e;
             border: 1px solid #ffffff;
             padding: 20px;
             margin-bottom: 20px;
-            text-align: center; /* Centriramo sadržaj unutra */
+            text-align: center;
         }
         
-        /* Stil za veliku hobo sliku koja je i link */
         .hobo-banner {
             display: inline-block;
-            max-width: 100%; /* Da se prilagodi ekranu, a ne prelazi granice */
+            max-width: 100%;
             height: auto;
             border: 2px solid #fff;
             margin-bottom: 15px;
             transition: transform 0.2s;
         }
         
-        /* Mala animacija kad pređeš mišem preko hobo logoa */
         .hobo-banner:hover {
             transform: scale(1.02);
         }
@@ -80,14 +84,13 @@
 </head>
 <body>
 
-    <img src="logo.png" alt="Mališani Logo" class="logo">
-    <h1>Mališani Produkcija</h1>
+    <!-- Glavni logo je sada veći i nema tekstualnog H1 naslova iznad njega -->
+    <img src="logo.png" alt="Mališani Produkcija" class="logo">
     
-    <p style="text-align: center;">// Službeno neovlašteni mrežni resurs</p>
+    <div class="tagline">// Službeno neovlašteni mrežni resurs</div>
 
-    <!-- PROJEKT UMJESTO TEKSTUALNOG NASLOVA -->
+    <!-- PROJEKT -->
     <div class="project-box">
-        <!-- Slika je obavijena linkom tako da klik na nju vodi na hobo stranicu -->
         <a href="/hobo-beskucnik/">
             <img src="hobo-logo.png" alt="Hobo Beskućnik Logo" class="hobo-banner">
         </a>
