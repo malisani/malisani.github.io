@@ -7,13 +7,20 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
+        /* CIJELA POZADINA STRANICE */
         body {
-            background-color: #002366; /* Kraljevsko plava */
+            background-image: url('pozadina.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-color: #000; /* Crna pozadina ako slika zakasni */
             color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
+            /* Kraljevsko plava s prozirnošću (zadnji broj 0.85 je stupanj prozirnosti) */
+            background-color: rgba(0, 35, 102, 0.85); 
             border: 3px solid #4169E1;
             box-sizing: border-box;
         }
@@ -32,9 +39,9 @@
             font-size: 0.9em;
         }
 
-        /* Stil za okvir projekta */
+        /* OKVIR PROJEKTA - isto prozirna plava nijansa */
         .project-box {
-            background: #1a3c8e;
+            background: rgba(26, 60, 142, 0.8);
             border: 1px solid #ffffff;
             padding: 20px;
             margin-bottom: 20px;
