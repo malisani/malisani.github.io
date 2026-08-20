@@ -7,20 +7,25 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
-        /* CIJELA POZADINA STRANICE */
-        body {
+        /* POZADINA ZA CIJELI EKRAN */
+        html {
             background-image: url('pozadina.png');
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
-            background-color: #000; /* Crna pozadina ako slika zakasni */
+            background-color: #000;
+            min-height: 100%;
+        }
+        
+        /* GLAVNI KVADRAT SADRŽAJA */
+        body {
+            /* Ista prozirna plava kao prije za Hobu */
+            background-color: rgba(26, 60, 142, 0.8); 
             color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            /* Kraljevsko plava s prozirnošću (zadnji broj 0.85 je stupanj prozirnosti) */
-            background-color: rgba(0, 35, 102, 0.85); 
             border: 3px solid #4169E1;
             box-sizing: border-box;
         }
@@ -39,10 +44,10 @@
             font-size: 0.9em;
         }
 
-        /* OKVIR PROJEKTA - isto prozirna plava nijansa */
+        /* OKVIR PROJEKTA */
         .project-box {
-            background: rgba(26, 60, 142, 0.8);
-            border: 1px solid #ffffff;
+            background: transparent; /* Maknuli smo boju odavde da ne bude duplo tamno */
+            border: 1px solid #ffffff; /* Bijeli okvir oko projekta ostaje */
             padding: 20px;
             margin-bottom: 20px;
             text-align: center;
