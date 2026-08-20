@@ -2,39 +2,76 @@
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <title>MALIŠANI PRODUKCIJA // SUSTAV JE GREŠKA</title>
+    <title>Mališani Produkcija // Službeni prozor u propast</title>
     <style>
         body {
-            background-color: #000;
-            color: #0f0;
+            background-color: #0b0b0b;
+            color: #00ff66;
             font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px dashed #00ff66;
         }
-        h1 { font-size: 3em; text-transform: uppercase; letter-spacing: 5px; }
-        .glitch { color: #f0f; }
-        a { color: #0ff; text-decoration: none; font-size: 1.5em; margin: 10px; }
-        a:hover { text-decoration: underline; }
-        .footer { position: fixed; bottom: 10px; font-size: 0.8em; opacity: 0.5; }
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #ff00ff;
+        }
+        .tagline {
+            color: #ff00ff;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .project-box {
+            background: #151515;
+            border: 1px solid #00ff66;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        a:hover {
+            background: #00ffff;
+            color: #000;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #777;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>MALIŠANI PRODUKCIJA</h1>
-    <p>...jer ozbiljni su već sve upropastili.</p>
+    <h1>Mališani Produkcija</h1>
+    <div class="tagline">// Službeno neovlašteni mrežni resurs za ismijavanje sustava</div>
 
-    <nav>
-        <a href="hobo-beskucnik/">[ 01 // HOBO BESKUĆNIK ]</a>
-        <br>
-        <a href="#">[ 02 // U DOLASKU... ]</a>
-    </nav>
+    <p>Dobrodošli na digitalnu čistinu gdje se ne prodaje magla, ne traže investitori i ne ispunjavaju porezne kartice. Ovdje se samo preživljava uz minimalne resurse i maksimalnu ironiju.</p>
+
+    <h2>Popis radova i nedarovitih djela:</h2>
+
+    <div class="project-box">
+        <h3>01. Hobo Beskućnik</h3>
+        <p>Inovativni stambeno-socijalni projekt koji se ruga urbanom luksuzu.</p>
+        <a href="/hobo-beskucnik/">👉 POGODITE PROJEKT (Hobo Beskućnik)</a>
+    </div>
+
+    <!-- Ovdje ćemo lako dodavati iduće projekte kad ih skrpate -->
+    <div class="project-box" style="opacity: 0.5;">
+        <h3>02. Uskoro (kad nam se da)</h3>
+        <p>Idući napad na zdrav razum je u izradi.</p>
+        <span style="color: #ff0055;">[ RAD NA ČEKANJU ZBOG KAVE ]</span>
+    </div>
 
     <div class="footer">
-        STATUS SUSTAVA: NEPOUZDAN
+        Mališani Produkcija &copy; 2026. Sva prava zadržana, ali vas molimo da ih ne koristite jer nam se da.
     </div>
 
 </body>
