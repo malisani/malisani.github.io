@@ -25,38 +25,50 @@
             max-width: 200px;
         }
         
-        /* Novi stilovi za odjeljak s projektom */
+        /* Stil za okvir projekta */
         .project-box {
             background: #1a3c8e;
             border: 1px solid #ffffff;
-            padding: 15px;
+            padding: 20px;
             margin-bottom: 20px;
-            display: flex; /* Ovo slaže elemente u red */
-            align-items: center; /* Centrira po visini */
+            text-align: center; /* Centriramo sadržaj unutra */
         }
-        .hobo-thumb {
-            width: 80px; /* Prilagodi veličinu slike */
+        
+        /* Stil za veliku hobo sliku koja je i link */
+        .hobo-banner {
+            display: inline-block;
+            max-width: 100%; /* Da se prilagodi ekranu, a ne prelazi granice */
             height: auto;
-            margin-right: 20px; /* Odvaja sliku od teksta */
-            border: 2px solid #fff; /* Mali okvir oko sličice */
+            border: 2px solid #fff;
+            margin-bottom: 15px;
+            transition: transform 0.2s;
         }
-        .project-text h3 {
-            margin: 0 0 5px 0;
-        }
-        .project-text p {
-            margin: 0 0 10px 0;
-            font-size: 0.9em;
+        
+        /* Mala animacija kad pređeš mišem preko hobo logoa */
+        .hobo-banner:hover {
+            transform: scale(1.02);
         }
 
-        a {
-            color: #87CEFA;
+        .project-desc {
+            margin: 0 0 15px 0;
+            font-size: 1em;
+            color: #e0e0e0;
+        }
+
+        a.btn-link {
+            display: inline-block;
+            background: #4169E1;
+            color: #ffffff;
+            padding: 10px 20px;
             text-decoration: none;
             font-weight: bold;
+            border: 1px solid #fff;
         }
-        a:hover {
-            color: #ffffff;
-            text-decoration: underline;
+        a.btn-link:hover {
+            background: #ffffff;
+            color: #002366;
         }
+
         .footer {
             margin-top: 50px;
             font-size: 0.8em;
@@ -73,14 +85,16 @@
     
     <p style="text-align: center;">// Službeno neovlašteni mrežni resurs</p>
 
-    <!-- AŽURIRANI ODJELJAK -->
+    <!-- PROJEKT UMJESTO TEKSTUALNOG NASLOVA -->
     <div class="project-box">
-        <img src="hobo-logo.png" alt="Hobo Logo" class="hobo-thumb">
-        <div class="project-text">
-            <h3>01. Hobo Beskućnik</h3>
-            <p>Inovativni stambeno-socijalni projekt.</p>
-            <a href="/hobo-beskucnik/">👉 POGODITE PROJEKT</a>
-        </div>
+        <!-- Slika je obavijena linkom tako da klik na nju vodi na hobo stranicu -->
+        <a href="/hobo-beskucnik/">
+            <img src="hobo-logo.png" alt="Hobo Beskućnik Logo" class="hobo-banner">
+        </a>
+        
+        <p class="project-desc">Inovativni stambeno-socijalni projekt koji se ruga sustavu.</p>
+        
+        <a href="/hobo-beskucnik/" class="btn-link">👉 POGODITE PROJEKT</a>
     </div>
 
     <div class="footer">
