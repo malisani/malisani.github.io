@@ -7,13 +7,13 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
         body {
-            background-color: #002366; /* Kraljevsko plava pozadina */
+            background-color: #002366; /* Kraljevsko plava */
             color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            border: 3px solid #4169E1; /* Royal blue border */
+            border: 3px solid #4169E1;
         }
         h1 {
             text-transform: uppercase;
@@ -24,14 +24,32 @@
             margin: 0 auto 20px auto;
             max-width: 200px;
         }
+        
+        /* Novi stilovi za odjeljak s projektom */
         .project-box {
-            background: #1a3c8e; /* Svjetlija kraljevsko plava */
+            background: #1a3c8e;
             border: 1px solid #ffffff;
             padding: 15px;
             margin-bottom: 20px;
+            display: flex; /* Ovo slaže elemente u red */
+            align-items: center; /* Centrira po visini */
         }
+        .hobo-thumb {
+            width: 80px; /* Prilagodi veličinu slike */
+            height: auto;
+            margin-right: 20px; /* Odvaja sliku od teksta */
+            border: 2px solid #fff; /* Mali okvir oko sličice */
+        }
+        .project-text h3 {
+            margin: 0 0 5px 0;
+        }
+        .project-text p {
+            margin: 0 0 10px 0;
+            font-size: 0.9em;
+        }
+
         a {
-            color: #87CEFA; /* Svijetlo plava za linkove */
+            color: #87CEFA;
             text-decoration: none;
             font-weight: bold;
         }
@@ -55,10 +73,14 @@
     
     <p style="text-align: center;">// Službeno neovlašteni mrežni resurs</p>
 
+    <!-- AŽURIRANI ODJELJAK -->
     <div class="project-box">
-        <h3>01. Hobo Beskućnik</h3>
-        <p>Inovativni stambeno-socijalni projekt.</p>
-        <a href="/hobo-beskucnik/">👉 POGODITE PROJEKT (Hobo Beskućnik)</a>
+        <img src="hobo-logo.png" alt="Hobo Logo" class="hobo-thumb">
+        <div class="project-text">
+            <h3>01. Hobo Beskućnik</h3>
+            <p>Inovativni stambeno-socijalni projekt.</p>
+            <a href="/hobo-beskucnik/">👉 POGODITE PROJEKT</a>
+        </div>
     </div>
 
     <div class="footer">
